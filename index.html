@@ -8,7 +8,7 @@
 -->
 
 <!DOCTYPE html>
-<html>
+<html class="bg-dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <title>Sarah Kovar - Portfolio</title>  
     </head> 
-    <body>
+    <body class="bg-dark">
         <nav id="nav" class="fixed-top bg-dark">
             <ul class="nav d-flex">
                 <li class="nav-item p-2">
@@ -48,7 +48,37 @@
                 <p class="display-1 carousel-caption align-left">Sarah Kovar</p>
             </div>
         </div>
-
+        <div id="about" class="container-fluid bg-dark" style="height: 100vh">
+          <p class="display-3 pt-5 text-light ml-2">About Me</p>
+          <p class="lead text-light w-50 ml-2">Sarah Kovar has fourteen years’ experience in the infrastructure and support side of technology. The last 3.5 years of her career
+            have been spent supporting and developing within the proprietary ITSM application ServiceNow which sparked her passion to become a web developer and expand her skills
+            to become more widely applicable.  
+            <p class="lead text-light w-50 ml-2">Sarah is currently a student at Bellevue University working towards a degree in Web Development.  She has two Associate’s 
+            degrees from Metropolitan Community College in Omaha, NE; one in Multimedia Design and one in Programming for Database and Web with an emphasis in Java and C#. 
+            She started her career in print media at a local magazine in Lincoln, NE; however, quickly diverged to Information Technology due to the more diverse opportunities 
+            that could be obtained via on-the-job training or certifications.  
+            <p class="lead text-light w-50 ml-2">She and her husband have a 1.5 year old daughter that keeps them busy. When they aren’t chasing after their toddler, their two large 
+            dogs and three cats keep them busy dehairing everything they come in contact with. They recently purchased a bike trailer they hope their daughter will 
+            enjoy, but can also use it to transport their zoo around.  Pre-parenthood she enjoyed playing guitar, traveling, and metal engraving.</p>
+            
+        </div>
+        <div id="education" class="container-fluid bg-dark" style="height: 100vh">
+          
+          <p class="display-3 pt-5 text-light ml-2">Education</p>
+          <ul class="lead text-light w-50 ml-2">
+            <li><p>Bellevue University (Bellevue, NE)</p>
+              <p>(2021) Bachelor of Science, Web Development</p>
+              </li>
+              <li>
+                <p>Metropolitan Community College (Omaha, NE)</p>
+                <p>(2019) Associate of Applied Science, Programming for Database/Web - C#, Java, SQL</p>
+              </li>
+              <li>
+                <p>Metropolitan Community College (Omaha, NE)</p>
+                <p>(2003) Associate of Applied Science, Electronic Imaging and Graphics - Multimedia Option</p>
+              </li>
+          </ul>
+        </div>
 
 <!--
 
@@ -69,36 +99,48 @@
               <li data-target="#portfolio" data-slide-to="2"></li>
               <li data-target="#portfolio" data-slide-to="3"></li>
             </ol>-->
+
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="images/biosite.jpg" alt="First slide">
-                <a href="https://github.com/banjofrailer/bioSite" target="_blank" class="stretched-link"></a>
-                <div class="carousel-caption">
+              <img class="d-block w-100" src="images/bioSitePrototype.jpg" alt="First slide">
+              <a href="images/biositePrototype.pdf" target="_blank" class="stretched-link"></a>
+              <!--<div class="carousel-caption">
+                <h3 class="text-dark">bioSite Prototype</h3>
+              </div>-->
+            </div>
+            
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/bioSite.jpg" alt="Second slide">
+                <a href="https://banjofrailer.github.io/bioSite/" target="_blank" class="stretched-link"></a>
+                <!--<div class="carousel-caption">
                   <h3 class="text-dark">bioSite</h3>
-                </div>
+                </div>-->
               </div>
+
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/web231.jpg" alt="Second slide">
+                <img class="d-block w-100" src="images/web231.jpg" alt="Third slide">
                 <a href="https://github.com/banjofrailer/web-231"  target="_blank" class="stretched-link"></a>
-                <div class="carousel-caption">
-                  <h3 class="text-dark">Web 231</h3>
-                </div>
+                <!--<div class="carousel-caption">
+                  <h3 class="text-dark">Web 231 Repository</h3>
+                </div>-->
               </div>
+
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/web330.jpg" alt="Third slide">
+                <img class="d-block w-100" src="images/web330.jpg" alt="Fourth slide">
                 <a href="https://github.com/banjofrailer/web-330"  target="_blank" class="stretched-link"></a>
-                <div class="carousel-caption">
-                  <h3 class="text-dark">Web 330</h3>
-                </div>
+                <!--<div class="carousel-caption">
+                  <h3 class="text-dark">Web 330 Repository</h3>
+                </div>-->
               </div>
+
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/portfolio.jpg" alt="Fourth slide">
+                <img class="d-block w-100" src="images/portfolioPrototype.jpg" alt="Fifth slide">
                 <a href="https://github.com/banjofrailer/banjofrailer.github.io/blob/master/images/portfolio.jpg" target="_blank" class="stretched-link"></a>
-                <div class="carousel-caption">
-                  <h3 class="text-dark">Prototype</h3>
-                </div>
+                <!--<div class="carousel-caption">
+                  <h3 class="text-dark">Portfolio Prototype</h3>
+                </div>-->
               </div>
-          
+            </div>
 
             <!--
             <a class="carousel-control-prev bg-light" href="#portfolio" role="button" data-slide="prev">
@@ -131,7 +173,14 @@
 </a>
 </div>
 <div class="bg-dark" id="contact" style="height: 100vh;">
-  <a href="https://www.linkedin.com/in/sarahkovar/" class="text-light"><i class="fab fa-linkedin"> </i></a>
-   <a href="https://github.com/banjofrailer" class="text-light"><i class="fab fa-github"> </i></a>
-   <a href="mailto:sarahkovar@gmail.com" class="text-light"><i class="fas fa-envelope-square"></i></a>
+  <p class="display-3 text-light pt-5">Contact 
+    <p></p>
+    <img src="images\contact.png" class="img-fluid mx-auto d-block" alt="Sarah Kovar Head Shot">
+    <p class="text-light text-center">Sarah Kovar</p>
+    <div class="text-center">
+      <a href="https://www.linkedin.com/in/sarahkovar/" class="text-light display-3 "> <i class="fab fa-linkedin"> </i></a>
+      <a href="https://github.com/banjofrailer" class="text-light display-3"> <i class="fab fa-github"> </i></a>
+      <a href="mailto:sarahkovar@gmail.com" class="text-light display-3"> <i class="fas fa-envelope-square"></i></a></p>
+  </div>
 </div>
+</body>
